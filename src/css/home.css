@@ -1,0 +1,105 @@
+
+
+html {
+	background-image: url(seigaiha.png);
+	background-repeat: repeat;
+}
+
+body {
+	background-image: url(ba.png);
+	background-position: top right;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+.page-header {
+	font-size: 40px;
+	color: #333;
+	font-family: sans-serif;
+	text-align: center;
+}
+
+
+.page-header__add {
+	color: #ccc;
+	font-size: .5em;
+	font-style: italic;
+}
+
+
+.info {
+	font-size: 16px;
+	color: #888;
+	font-family: sans-serif;
+	font-weight: bold;
+}
+
+
+.content {
+	font-family: sans-serif;
+	text-align: center;
+	list-style: none;
+}
+
+
+
+.content__link {
+	text-decoration: none;
+	font-size: 30px;
+	font-variant: small-caps;
+}
+
+.section-header {
+	font-family: cursive;
+	font-size: 35px;
+	text-align: justify;
+}
+
+.section-content {
+	text-indent: 40px;
+	font-size: 18px;
+	color: #222;
+	font-family: cursive;
+	font-weight: bold;
+	text-align: justify;
+}
+
+.section-content:first-line {
+	font-size: 1.3em;
+	color: #a83;
+}
+
+
+.section-content:first-letter {
+	font-size: 3em;
+	color: #ea3;
+}
+
+
+.sectioin-last {
+font-family: verdana
+font-size: 18px
+color: #a29
+
+}
+
+.header-line {
+	background: #666;
+	color: white;
+	text-align: center;
+}
+.decorated-table {
+	font-size: 18px;
+	font-family: Tahoma, sans-serif;
+}
+
+
+a:hover{
+	text-decoration: underline;
+
+
+}
+
+.content__item:hover {
+	background: #e0e;
+	list-style-image: url(p.png);
