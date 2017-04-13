@@ -1,0 +1,22 @@
+.button {
+	display: inline-block;
+	padding: 5px 15px;
+	background: #3a9;
+	color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    box-shadow: 0 3px 0 0px #298;
+    transition: background, box-shadow .3s, .3s;
+}
+
+.button:hover {
+	background: #4ba;
+	box-shadow: 0 3px 0 0 #3a9;
+}
+
+.button:active,
+.button:focus {
+	background: #289;
+	box-shadow: 0 3px 0 0 #178;
+}
+

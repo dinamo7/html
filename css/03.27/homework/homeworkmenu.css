@@ -1,0 +1,55 @@
+html {
+	font-size: 25px; 
+	font-family: arial;
+}
+
+body {
+   margin: 0;
+}
+
+
+
+.menu {
+margin: 0;
+padding: 0;
+list-style: none;
+text-align: justify;
+}
+
+.menu-inner {
+display: none;
+position: absolute;
+top: 100%;
+left: 0;
+}
+
+.menu-link {
+text-decoration: none;
+background: #ed1;
+padding: 5px 15px;
+color: #444;
+display: inline-block;
+width: 100%;
+}
+
+.menu-item {
+	font-size: 20px;
+	position: relative;
+	display: block;
+	width: 200px;
+
+}
+
+.menu-item:hover > .menu-inner {
+	display: block;
+}
+
+.menu:after {
+	content: '';
+	display: table;
+	width: 100%;
+	font-size: 0;
+	height: 100%;
+
+
+}

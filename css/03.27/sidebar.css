@@ -1,0 +1,57 @@
+html {
+	font-family:sans-serif; 
+	font-size: 18px;
+}
+
+html, body{
+	height: 100%;
+
+}
+
+body{
+
+	margin:0; 
+}
+
+.wrapper{
+	background: #357;
+	min-height: 100%;
+	margin-bottom: -100px;
+}
+
+.main {
+	background: #823;
+	padding-bottom: 100px;
+	margin-left: 300px; 
+	margin-right: 200px; 
+}
+
+.footer {
+	background: #ed1;
+	height: 100px; 
+}
+
+.header {
+	background: #ee8;
+	height: 50px;
+}
+
+.sidebar {
+	background: #593;
+    width: 300px;
+    float: left;
+}
+
+.wrapper:after {
+	content: '';
+	height: 0;
+	font-size: 0;
+	clear: both;
+	display: block;
+}
+
+.right-sidebar {
+	background: #197;
+	width: 200px;
+	float: right;
+}

@@ -1,0 +1,10 @@
+.block {
+  display: block;
+  background: #888;
+  margin-top: 10px;
+}
+.block-lower {
+  background: #334;
+  display: block;
+  height: 200px;
+}

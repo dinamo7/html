@@ -1,0 +1,49 @@
+html {
+	font-family: sans-serif;
+	font-size: 18px;
+}
+
+body{
+margin: 40px;
+
+}
+
+.button{
+	background: #a93
+	color: #eee;
+    text-decoration: none;
+    display: inline-block;
+    padding: 5px 10px 2px 32px;
+    min-height: 16px;
+    position: relative;
+    text-transform: uppercase;
+ }
+
+.button:hover {
+	background: #fa4;
+}
+
+.button:active {
+	background: #e82;
+}
+
+.button:after {
+	content: "";
+	position: absolute;
+	left: 10px;
+	top: 50%;
+	margin-top: -8px;
+	width: 16px;
+	height:16px;
+	background: #9f3
+}
+
+a:focus{
+	color: green
+}
+ 
+ .button:active,
+ .button:focus {
+ 	background: #e82;
+ 	color: white
+ }

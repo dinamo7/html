@@ -1,0 +1,54 @@
+html{
+	font-family: sans-serif;
+	font-size: 18;
+}
+
+body{
+	margin: 0;
+}
+.container {
+	border: 1px solid #444;
+	height: 100px
+}
+
+.menu {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+    font-size: 0;
+    text-align: justify;
+    width: 100%;
+    display: inline-block;
+    white-space: normal;
+    vertical-align: middle;
+}
+
+.menu-items {
+	background: #3af;
+	display: inline-block;
+	font-size: 18px;
+}
+
+.menu:after {
+	content: "";
+	display: inline-block;
+	width: 100%;
+    font-size: 0;
+    height: 0;
+
+}
+
+.menu-container{
+	height: 100%;
+	white-space: nowrap;
+    font-size: 0;
+}
+
+.menu-container:before {
+	content: "";
+	width: 0;
+	font-size: 0;
+	height: 100%;
+	display: inline-block;
+	vertical-align: middle;
+}

@@ -1,0 +1,118 @@
+.header {
+  height: 80px;
+  background: linear-gradient(to left, #1d1d1d, #7d7d7d);
+  border-radius: 10px;
+}
+.menu {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 0;
+  color: #67f3ff;
+}
+.menu-item {
+  display: inline-block;
+  font-size: 40px;
+  padding-left: 40px;
+}
+.menu-link {
+  text-decoration: none;
+  font-family: Carlito;
+  display: inline-block;
+  border-top: 3px solid transparent;
+  transition: border 2s;
+  line-height: 65px;
+  color: #67f3ff;
+  padding-right: 10px;
+  text-shadow: 3px 1px 5px #777;
+}
+.menu-link:hover {
+  border-top: 3px solid #67f3ff;
+  text-decoration: none;
+}
+.menu:after {
+  display: inline-block;
+  content: '';
+  width: 100%;
+  height: 0;
+  font-size: 0;
+}
+.h1 {
+  text-align: center;
+  font-family: SimSun;
+  text-shadow: 3px 1px 5px #777;
+}
+.foto-gallery {
+  display: block;
+  background: #01192d;
+  margin-top: 5px;
+  border-radius: 10px;
+  height: inherit;
+}
+.pic {
+  display: block;
+  padding-left: 14px;
+}
+.pic:hover {
+  transform: scale(1.2, 1.2);
+}
+.words {
+  color: #67f3ff;
+  font-family: "Courier New";
+}
+.input {
+  margin: 5px;
+  color: #000000;
+  padding-top: 20px;
+}
+.btn {
+  margin-top: 10px;
+}
+.sidebar {
+  background: #777;
+  display: block;
+  border-radius: 10px;
+}
+.manu-lower {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+  font-size: 0;
+  background: linear-gradient(to bottom, #00c4ff, #0e2438);
+  border-radius: 5px;
+}
+.menu:after {
+  display: block;
+  content: '';
+  width: 100%;
+  height: 0;
+  font-size: 0;
+}
+.menu-item-lower {
+  display: inline-block;
+  font-size: 25px;
+}
+.menu-link-lower {
+  text-decoration: none;
+  font-family: Carlito;
+  display: block;
+  line-height: 65px;
+  padding-right: 10px;
+  text-shadow: 3px 1px 5px #000;
+}
+.menu-link-lower:hover {
+  text-decoration: none;
+}
+.last-section {
+  background: linear-gradient(to top, #1d1d1d, #c5c5c5);
+  min-height: 80px;
+  border-radius: 10px;
+  margin-top: 2px;
+}
+.word {
+  text-align: center;
+  text-shadow: 3px 1px 5px #292922;
+  font-family: SimSun;
+  font-size: 20px;
+}
