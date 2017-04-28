@@ -1,0 +1,48 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8">
+  <style>
+  body {
+	background-color: black;
+	overflow: hidden;
+  }
+  
+  .ball {
+		position: absolute;
+		background: radial-gradient(white 0%, transparent 70%);
+		width:40px;
+		height:40px;
+   }
+  </style>
+</head>
+<body>
+<script src="http://campells.net/Ball_Classes.js"></script>
+
+<script>
+
+  class CustomBall extends BouncingBall {
+       makeStep(){
+          super.makeStep();  
+		this.incX *= 0.95;
+		this.incY *= 0.95;
+               var wind = +50;  
+			   this.incY += 0.05*(this.incY - wind)
+  }
+
+ }
+  window.onclick = function(e){
+	//var ball = new FlyingObject(e.clientX-20, e.clientY-20, "ball");
+	
+	//var ball = new PingPongBall(30, window.innerHeight-70, "ball", Math.atan2(e.clientY - window.innerHeight, e.clientX));
+	
+
+	var ball = new CustomBall(-20, window.innerHeight-20,'ball', e.clientX/10, (e.clientY-window.innerHeight)/10);
+
+	ball.fly();
+  }
+  
+
+</script> 
+</body>
+</html>

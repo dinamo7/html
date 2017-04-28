@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8">
+ </head>
+ <body>
+<input type='text' id='screen' disabled><br>
+
+
+
+<button onclick="f('1')">1</button> 
+<button onclick="f('2')">2</button> 
+<button onclick="f('3')">3</button> 
+<button onclick="f('4')">4</button> <br>
+<button onclick="f('5')">5</button> 
+<button onclick="f('6')">6</button> 
+<button onclick="f('7')">7</button> 
+<button onclick="f('8')">8</button> <br>
+<button onclick="f('9')">9</button> 
+<button onclick="f('0')">0</button> 
+<button onclick="f('+')">+</button> 
+<button onclick="f('-')">-</button><br> 
+<button onclick="f('=')">=</button> 
+<button onclick="f('c')">c</button> 
+<button onclick="f('/')">/</button> 
+<button onclick="f('*')">*</button> 
+
+<script>
+
+function f(key){
+    var screenObj = document.getElementById('screen');
+      if (key == "=")
+	    screenObj.value += '=' + eval(screenObj.value);
+		 else
+		     screenObj.value += key;
+}			 
+
+
+</script> 
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE HTML>
+<html>
+ <head>
+  <meta charset="utf-8">
+  <style>
+  body {
+	background-color: black;
+	overflow: hidden;
+  }
+   /* тут задаємо розмір, шрифт і колір надпису */
+   #flyingMsg {
+		position: absolute;
+		font-family: Impact;
+		font-size: 100px;
+		line-height:80px;
+		color: red;
+   }
+  </style>
+</head>
+<body>
+
+<!-- тут визначаємо надпис -->
+<div id="flyingMsg">
+Hello&nbsp;World!
+</div>
+
+<script>
+//Тут задаємо розміри, початкову позицію і швидкість руху
+const 	MESSAGE_WIDTH = 500,
+		MESSAGE_HEIGHT = 80;
+
+var msgTop = 100,
+	msgLeft = 100,
+	msgIncTop = 5,
+	msgIncLeft = 5;
+	
+	var msgDiv = document.getElementById("flyingMsg");
+
+	function getRanColor(){
+	var rnd = Math.floor(Math.random()*5);
+	switch (rnd){
+	case 0 : return "green"
+	case 1 : return "black"
+	case 3 : return "blue"
+	default: return "white"
+	function moveMessage(){
+	msgTop += msgIncTop;
+		if (msgTop > window.innerHeight-MESSAGE_HEIGHT || msgTop < 0) {
+		
+		msgIncTop = -msgIncTop;
+		msgDiv.style.color = getRanColor()
+	msgLeft += msgIncLeft;
+		if (msgLeft > window.innerWidth-MESSAGE_WIDTH  || msgLeft < 0) {
+
+		msgIncLeft = -msgIncLeft;
+        msgDiv.style.color = getRanColor()
+	msgDiv.style.color = 'green'
+	msgDiv.style.top = msgTop + 'px';
+	msgDiv.style.left = msgLeft + 'px';
+	//msgDiv.style.color = 'green'; //так міняється колір
+	
+}
+
+	setInterval(moveMessage, 15); //40 кадрів в сек
+
+	</script> 
+   
+  
+    
+ </body>
+ </html>

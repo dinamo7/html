@@ -1,0 +1,24 @@
+﻿<script>
+
+var secretNum = Math.ceil(Math.random()*100);
+ 
+while(true) {
+   var answer = prompt('від 1 до 100?');
+   
+   if (answer == null) 
+		break;
+   else
+      if (isNaN(answer) || answer < 1 || answer > 100)
+	    alert('має бути число!');
+		else
+			if (answer > secretNum)
+				alert('забагато');
+			else
+				if (answer < secretNum)
+					alert('замало');
+				else{
+					alert('ви вгадали!');
+					break;
+				}
+}
+</script>

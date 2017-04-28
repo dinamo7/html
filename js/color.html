@@ -1,0 +1,58 @@
+<!DOCTYPE HTML>
+<html>
+ <head>
+  <meta charset="utf-8">
+  <style>
+  body {
+	background-color: black;
+	overflow: hidden;
+  }
+   /* тут задаємо розмір, шрифт і колір надпису */
+   #flyingMsg {
+		position: absolute;
+		font-family: Impact;
+		font-size: 100px;
+		line-height:80px;
+		color: red;
+   }
+  </style>
+</head>
+<body>
+
+<!-- тут визначаємо надпис -->
+<div id="flyingMsg">
+Hello&nbsp;World!
+</div>
+
+<script>
+//Тут задаємо розміри, початкову позицію і швидкість руху
+const 	MESSAGE_WIDTH = 500,
+		MESSAGE_HEIGHT = 80;
+
+var msgTop = 100,
+	msgLeft = 100,
+	msgIncTop = 2,
+	msgIncLeft = 2;
+	
+	var msgDiv = document.getElementById("flyingMsg");
+
+	function moveMessage(){
+	msgTop += msgIncTop;
+		if (msgTop > window.innerHeight-MESSAGE_HEIGHT || msgTop < 0) msgIncTop = -msgIncTop; msgDiv.style.color = 'green';
+	msgLeft += msgIncLeft;
+		if (msgLeft > window.innerWidth-MESSAGE_WIDTH  || msgLeft < 0) msgIncLeft = -msgIncLeft;
+		
+	var msgDiv = document.getElementById("flyingMsg");
+	msgDiv.style.top = msgTop + 'px';
+	msgDiv.style.left = msgLeft + 'px';
+	//msgDiv.style.color = 'green'; //так міняється колір
+	
+}
+
+	setInterval(moveMessage, 25); //40 кадрів в сек
+</script> 
+   
+  
+    
+ </body>
+ </html>

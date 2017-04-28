@@ -1,0 +1,353 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="styles/mail.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+
+
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#">ZaxidNetClone</a>
+                </div>
+
+                <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="#"><i class="glyphicon glyphicon-user"></i> Автори та статті</a>
+                        </li>
+                        <li><a href="#">Анонси</a></li>
+                    </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <div class="media-right">
+                                <a href="#">
+                                    <img class="img" src="https://placehold.it/100x50">
+                                </a>
+                            </div>
+                        </li>
+
+                        <li class="hello"><a href="#">Привіт, Імя Користувача</a></li>
+
+                        <li><a href="#"><i class="glyphicon glyphicon-off"></i> Вийти</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+
+
+    <h1 class="page-header">Панель управління авторами і статтями</h1>
+
+    <div class="row">
+        <sidebar class="col-xs-4">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    Автори <i class="glyphicon glyphicon-plus glyphicon-info"></i>
+
+                    <div class="btn-group pull-right" role="group">
+                        <button type="button" class="btn btn-default btn-danger btn-xs">
+                            <i class="glyphicon glyphicon-trash"></i> Видалити
+                        </button>
+                        <button type="button" class="btn btn-default btn-warning btn-xs">
+                            <i class="glyphicon glyphicon-ban-circle"></i> Забанити
+                        </button>
+                    </div>
+                </div>
+
+                <table class="table table-striped">
+                    <tr class="info">
+                        <th><img src="https://placehold.it/100x100" class="thumbnail"></th>
+                        <th>
+                            Імя Користувача
+                            <button class="btn btn-warning btn-xs">
+                                <div class="style">Запит на публікацію</div>
+                            </button>
+                        </th>
+                        <th>
+                            <button class="btn btn-xs btn-default color">Блогер</button>
+                        </th>
+                    </tr>
+
+                    <tr class="warning">
+                        <th><img src="https://placehold.it/100x100" class="thumbnail"></th>
+                        <th>
+                            Імя Користувача
+                            <button class="btn btn-warning btn-xs">
+                                <div class="style">Запит на публікацію</div>
+                            </button>
+                        </th>
+                        <th>
+                            <button class="btn btn-xs btn-default color">Блогер</button>
+                        </th>
+                    </tr>
+
+                    <tr class="warning">
+                        <th><img src="https://placehold.it/100x100" class="thumbnail"></th>
+                        <th>
+                            Імя Користувача
+                            <button class="btn btn-warning btn-xs">
+                                <div class="style">Запит на публікацію</div>
+                            </button>
+                        </th>
+                        <th>
+                            <button class="btn btn-xs btn-default color">Блогер</button>
+                        </th>
+                    </tr>
+
+                    <tr>
+                        <th><img src="https://placehold.it/100x100" class="thumbnail"></th>
+                        <th>
+                            Імя Користувача
+                            <button class="btn btn-warning btn-xs">
+                                <div class="style">Запит на публікацію</div>
+                            </button>
+                        </th>
+                        <th>
+                            <button class="btn btn-xs btn-default color">Блогер</button>
+                        </th>
+                    </tr>
+
+                    <tr class="danger">
+                        <th><img src="https://placehold.it/100x100" class="thumbnail"></th>
+                        <th>
+                            Імя Користувача
+                            <button class="btn btn-danger btn-xs">
+                                <div class="style">Запит на публікацію</div>
+                            </button>
+                        </th>
+                        <th>
+                            <button class="btn btn-xs btn-default color">Блогер</button>
+                        </th>
+                    </tr>
+                </table>
+                <div class="panel-footer">
+                <div class="btn-group" role="group">
+                    <button type="button" class="btn btn-default"><i class="glyphicon glyphicon-menu-left"></i></button>
+                    <button type="button" class="btn btn-default">1</button>
+                    <button type="button" class="btn btn-default">2</button>
+                    <button type="button" class="btn btn-default">3</button>
+                    <button type="button" class="btn btn-default">4</button>
+                    <button type="button" class="btn btn-default">5</button>
+                    <button type="button" class="btn btn-default"><i class="glyphicon glyphicon-menu-right"></i>
+                    </button>
+                </div>
+            </div>
+            </div>
+
+
+
+
+        </sidebar>
+
+        <main class="col-xs-8">
+            <div class="row">
+                <div class="col-xs-6">
+                    <div class="row form-group">
+                        <div class="col-xs-2"><strong>Фото</strong></div>
+                        <div class="col-xs-8">
+                            <img src="https://placehold.it/250x200" class="thumbnail">
+                            <a href="#"><i class="glyphicon glyphicon-retweet"></i> Змінити</a>
+                        </div>
+                    </div>
+                    <div class="row form-group">
+                        <div class="col-xs-2"><strong>Email</strong></div>
+                        <div class="col-xs-8">
+                            <input type="text" class="form-control">
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div class="col-xs-5">
+                    <div class="row form-group">
+                        <div class="col-xs-3">
+                            <strong>type</strong>
+                        </div>
+                        <div class="col-xs-9">
+                            <input type="text" class="form-control">
+                        </div>
+                    </div>
+                    <div class="row form-group padding">
+                        <div class="col-xs-3">
+                            <strong>type</strong>
+                        </div>
+                        <div class="col-xs-9">
+                            <input type="text" class="form-control">
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="btn-group pull-right">
+                    <button class="btn btn-info"><i class="glyphicon glyphicon-download"></i>Зберегти</button>
+                    <button class="btn btn-default">Скасувати</button>
+                </div>
+
+
+                <div class="col-xs-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            Статті користувача <i class="glyphicon"></i>
+                        </div>
+                        <table class="table table-striped">
+
+                            <tr>
+                            <th><strong>Заголовок статті</strong><div class="pull-right"><strong>Опції</strong></div></th>
+
+                        </tr>
+                            <tr>
+                                <th class="info">Якась стаття
+                                    <div class="btn-group pull-right" role="group">
+                                        <button type="button" class="btn btn-info"><i class="glyphicon glyphicon-eye-open"></i></button>
+                                        <button type="button" class="btn btn-success"><i class="glyphicon glyphicon-ok-sign"></i></button>
+                                        <button type="button" class="btn btn-warning"><i class="glyphicon glyphicon-info-sign"></i></button>
+                                        <button type="button" class="btn btn-danger"><i class="glyphicon glyphicon-ban-circle"></i></button>
+                                    </div>
+                                </th>
+                            </tr>
+
+                            <tr>
+                                <th class="info">Якась стаття
+                                    <div class="btn-group pull-right" role="group">
+                                        <button type="button" class="btn btn-info"><i class="glyphicon glyphicon-eye-open"></i></button>
+                                        <button type="button" class="btn btn-success"><i class="glyphicon glyphicon-ok-sign"></i></button>
+                                        <button type="button" class="btn btn-warning"><i class="glyphicon glyphicon-info-sign"></i></button>
+                                        <button type="button" class="btn btn-danger"><i class="glyphicon glyphicon-ban-circle"></i></button>
+                                    </div>
+                                </th>
+                            </tr>
+
+                            <tr>
+                                <th class="info">Якась стаття
+                                    <div class="btn-group pull-right" role="group">
+                                        <button type="button" class="btn btn-info"><i class="glyphicon glyphicon-eye-open"></i></button>
+                                        <button type="button" class="btn btn-success"><i class="glyphicon glyphicon-ok-sign"></i></button>
+                                        <button type="button" class="btn btn-warning"><i class="glyphicon glyphicon-info-sign"></i></button>
+                                        <button type="button" class="btn btn-danger"><i class="glyphicon glyphicon-ban-circle"></i></button>
+                                    </div>
+                                </th>
+                            </tr>
+
+                            <tr>
+                                <th class="success">Якась стаття
+                                    <div class="btn-group pull-right" role="group">
+                                        <button type="button" class="btn btn-info"><i class="glyphicon glyphicon-eye-open"></i></button>
+                                        <button type="button" class="btn btn-success"><i class="glyphicon glyphicon-ok-sign"></i></button>
+                                        <button type="button" class="btn btn-warning"><i class="glyphicon glyphicon-info-sign"></i></button>
+                                        <button type="button" class="btn btn-danger"><i class="glyphicon glyphicon-ban-circle"></i></button>
+                                    </div>
+                                </th>
+                            </tr>
+
+                            <tr>
+                                <th class="danger">Якась стаття
+                                    <div class="btn-group pull-right" role="group">
+                                        <button type="button" class="btn btn-info"><i class="glyphicon glyphicon-eye-open"></i></button>
+                                        <button type="button" class="btn btn-success"><i class="glyphicon glyphicon-ok-sign"></i></button>
+                                        <button type="button" class="btn btn-warning"><i class="glyphicon glyphicon-info-sign"></i></button>
+                                        <button type="button" class="btn btn-danger"><i class="glyphicon glyphicon-ban-circle"></i></button>
+                                    </div>
+                                </th>
+                            </tr>
+
+                            <tr>
+                                <th class="warning">Якась стаття
+                                    <div class="btn-group pull-right" role="group">
+                                        <button type="button" class="btn btn-info"><i class="glyphicon glyphicon-eye-open"></i></button>
+                                        <button type="button" class="btn btn-success"><i class="glyphicon glyphicon-ok-sign"></i></button>
+                                        <button type="button" class="btn btn-warning"><i class="glyphicon glyphicon-info-sign"></i></button>
+                                        <button type="button" class="btn btn-danger"><i class="glyphicon glyphicon-ban-circle"></i></button>
+                                    </div>
+                                </th>
+                            </tr>
+
+                            <tr>
+                                <th class="default">Якась стаття
+                                    <div class="btn-group pull-right" role="group">
+                                        <button type="button" class="btn btn-info"><i class="glyphicon glyphicon-eye-open"></i></button>
+                                        <button type="button" class="btn btn-success"><i class="glyphicon glyphicon-ok-sign"></i></button>
+                                        <button type="button" class="btn btn-warning"><i class="glyphicon glyphicon-info-sign"></i></button>
+                                        <button type="button" class="btn btn-danger"><i class="glyphicon glyphicon-ban-circle"></i></button>
+                                    </div>
+                                </th>
+                            </tr>
+
+                            <tr>
+                                <th class="default">Якась стаття
+                                    <div class="btn-group pull-right" role="group">
+                                        <button type="button" class="btn btn-info"><i class="glyphicon glyphicon-eye-open"></i></button>
+                                        <button type="button" class="btn btn-success"><i class="glyphicon glyphicon-ok-sign"></i></button>
+                                        <button type="button" class="btn btn-warning"><i class="glyphicon glyphicon-info-sign"></i></button>
+                                        <button type="button" class="btn btn-danger"><i class="glyphicon glyphicon-ban-circle"></i></button>
+                                    </div>
+                                </th>
+                            </tr>
+
+                            <tr>
+                                <th class="default">Якась стаття
+                                    <div class="btn-group pull-right" role="group">
+                                        <button type="button" class="btn btn-info"><i class="glyphicon glyphicon-eye-open"></i></button>
+                                        <button type="button" class="btn btn-success"><i class="glyphicon glyphicon-ok-sign"></i></button>
+                                        <button type="button" class="btn btn-warning"><i class="glyphicon glyphicon-info-sign"></i></button>
+                                        <button type="button" class="btn btn-danger"><i class="glyphicon glyphicon-ban-circle"></i></button>
+                                    </div>
+                                </th>
+                            </tr>
+
+                            <tr>
+                                <th class="default">Якась стаття
+                                    <div class="btn-group pull-right" role="group">
+                                        <button type="button" class="btn btn-info"><i class="glyphicon glyphicon-eye-open"></i></button>
+                                        <button type="button" class="btn btn-success"><i class="glyphicon glyphicon-ok-sign"></i></button>
+                                        <button type="button" class="btn btn-warning"><i class="glyphicon glyphicon-info-sign"></i></button>
+                                        <button type="button" class="btn btn-danger"><i class="glyphicon glyphicon-ban-circle"></i></button>
+                                    </div>
+                                </th>
+                            </tr>
+                    </table>
+                        <div class="panel-footer">
+                        <div class="btn-group" role="group">
+                            <button type="button" class="btn btn-default"><i class="glyphicon glyphicon-menu-left"></i></button>
+                            <button type="button" class="btn btn-default">1</button>
+                            <button type="button" class="btn btn-default">2</button>
+                            <button type="button" class="btn btn-default">3</button>
+                            <button type="button" class="btn btn-default">4</button>
+                            <button type="button" class="btn btn-default">5</button>
+                            <button type="button" class="btn btn-default"><i class="glyphicon glyphicon-menu-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+        </main>
+    </div>
+
+</div>
+
+
+</div>
+
+<script src="../../node_modules/jquery/dist/jquery.min.js"></script>
+<script src="../../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+</body>
+</html>
