@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+<div>
+    Your age : <span id="age"></span><br>
+    Your name : <span id="name"></span><br>
+    Your addres : <span id="addres"></span>
+</div>
+<script>
+    var userAge = prompt("Your Age?");
+
+    var div = document.getElementById("age");
+    div.innerText =  userAge;
+
+    var userName = prompt("And your name?");
+
+    var div = document.getElementById("name");
+    div.innerText =  userName;
+
+    var userAddres = prompt("Your addres?");
+
+    var div = document.getElementById("addres");
+    div.innerText =  userAddres;
+
+    alert("Good! Your PC is broken)")
+
+</script>
+</body>
+</html>
