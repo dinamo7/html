@@ -9,16 +9,26 @@
 </head>
 <body>
 
-<div>
+<span id="id" style="display: none;">3424</span>
+<div class="out">
+    Your pass : <span id="result-output"></span><br>
+    Your id : <span id="user-id"></span><br>
     Your age : <span id="age"></span><br>
     Your name : <span id="name"></span><br>
+
     Your addres : <span id="addres"></span>
+
 </div>
 <script>
-    var userAge = prompt("Your Age?");
+    var userAge = prompt("Your age?");
 
     var div = document.getElementById("age");
-    div.innerText =  userAge;
+    div.innerText = userAge;
+
+    var userPass = prompt("Your pass?");
+
+
+
 
     var userName = prompt("And your name?");
 
@@ -30,7 +40,13 @@
     var div = document.getElementById("addres");
     div.innerText =  userAddres;
 
-    alert("Good! Your PC is broken)")
+
+    var userPassElement  = document.getElementById("result-output");
+    userPassElement.innerText = userPass;
+    var userId = document.getElementById("id");
+
+    var userTarget = document.getElementById("user-id");
+    userTarget.innerHTML = userId.innerHTML;
 
 </script>
 </body>
