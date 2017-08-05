@@ -10,11 +10,6 @@ for (var i = 0;i < form.elements.length;i++) {
     });
 }
 
-btn.addEventListener("click", function (b) {
-
-});
-
-
 
 
 
@@ -30,3 +25,9 @@ for (var i = 0;i < form.elements.length;i++) {
     });
 }
 
+
+showBlock = document.getElementById("block");
+
+showBlock.addEventListener("change", function (a) {
+    blockElement.hidden = this.checked;
+});

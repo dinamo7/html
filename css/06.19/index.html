@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/node_modules/toastr/build/toastr.min.css">
+    <link href="main.css" rel="stylesheet">
+
+</head>
+<body>
+
+<!--
+<form action="#">
+<input type="text" name="fname" data-bind="textInput: firstName">
+<input type="text" name="lname" data-bind="textInput: lastName">
+</form>
+<strong data-bind="text: fullName">
+-->
+
+
+
+<div class="row">
+<div class="col-xs-3">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            Users
+            <button class="btn btn-danger btn-xs" data-bind="enable: selectedUser, click: removeSelectedUser">
+                Remove <i class="glyphicon glyphicon-trash"></i>
+            </button>
+        </div>
+
+
+<ul data-bind="foreach: { data: users, as: 'user'}" class="list-group">
+    <li class="list-group-item" data-bind="click: $parent.selectUser, css: { active: $parent.selectedUser() == user}">
+        <span data-bind="text: firstName"></span>
+        <span data-bind="text: lastName"></span>
+    </li>
+</ul>
+</div>
+</div>
+    <div class="col-xs-8 padding" data-bind="with: selectedUser">
+        <form action="#" data-bind="submit: $parent.saveUser">
+            <div class="row form-group">
+                <label for="firstName" class="col-xs-4">First Name</label>
+                <div class="col-xs-8">
+                    <input type="text" id="firstName" data-bind="value: firstName" class="form-control">
+                </div>
+            </div>
+            <div class="row form-group">
+                <label for="lastName" class="col-xs-4">last Name</label>
+                <div class="col-xs-8">
+                    <input type="text" id="lastName" data-bind="value: lastName" class="form-control">
+                </div>
+            </div>
+            <div class="row form-group">
+                <label for="birthDay" class="col-xs-4">birth Day</label>
+                <div class="col-xs-8">
+                    <input type="text" id="birthDay" data-bind="value: birthDay" class="form-control">
+                </div>
+            </div>
+            <div class="row form-group">
+                <label for="country" class="col-xs-4">First Name</label>
+                <div class="col-xs-8">
+                    <select name="country" id="country" data-bind="options: $parent.countries, value: country" class="form-control"></select>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-xs-12">
+                    <button class="btn btn-success btn-xs">
+                        Save <i class="glyphicon glyphicon-folder-open"></i>
+                    </button>
+                    <button class="btn btn-default btn-xs" data-bind="click: $parent.cancel">
+                        Cansel <i class="glyphicon glyphicon-remove"></i>
+                    </button>
+                </div>
+            </div>
+
+        </form>
+    </div>
+</div>
+
+
+<script src="node_modules/jquery/dist/jquery.min.js"></script>
+<script src="node_modules/toastr/build/toastr.min.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="node_modules/knockout/build/output/knockout-latest.debug.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

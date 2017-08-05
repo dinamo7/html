@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+<style>
+
+    .box {
+        text-align: center;
+        margin-left: 200px;
+        background: rgba(120, 123, 116, 0.8);
+        box-shadow: 5px 5px 5px #000000 ;
+        min-height: 300px;
+        margin-right: 200px;
+        padding-top: 10px;
+        padding-left: 20px;
+        padding-right: 50px;
+        padding-bottom: 40px;
+        border-radius: 5px;
+    }
+
+
+    input,
+    textarea {
+        border-radius: 5px;
+        margin-top: 10px;
+        display: block;
+        border: 1px solid #0e2438;
+        width: 100%;
+        padding: 5px 10px;
+        background: linear-gradient(to right, #fffdc3, #fffddb);
+    }
+
+    .tb {
+       width: 100%;
+        margin-top: 50px;
+        border-collapse: collapse;
+
+    }
+
+  .tr {
+    background: #585858;
+    color: #c6c1f9;
+
+   }
+
+    th {
+        border-bottom: 2px solid #000;
+        padding: 5px 10px;
+    }
+
+    .btn {
+        background: #c1c1c1;
+        padding: 10px 15px;
+        border-radius: 4px;
+        border: 1px solid #40396E;
+    }
+</style>
+
+<div class="box">
+<form action="/api/todo" method="post" name="createTodo">
+
+    <input type="hidden" name="identifier">
+
+    Title<input type="text" name="title" id="title"><br>
+    Desc<textarea name="desc" id="desc" cols="30" rows="2"> </textarea><br>
+    <button class="btn">Create</button>
+</form>
+
+
+<table id="out" class="tb">
+    <tr class="tr">
+        <th>Title</th>
+        <th>Desc</th>
+        <th>Options</th>
+    </tr>
+</table>
+
+</div>
+
+<script src="src/js/home.js"></script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+.box {
+    height: 200px;
+    width: 300px;
+    background-color: #a94dfd;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 5px 5px 5px #ffff;
+    margin-top: 50px;
+    border-radius: 4px;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.btn {
+    margin-top: 50px;
+    border-radius: 3px;
+    background-color: #a9a9a9;
+    box-shadow: 2px 2px 2px #333333;
+    padding: 5px 10px;
+}
+
+.inp {
+    border-radius: 4px;
+    margin-top: 50px;
+    box-shadow: 3px 2px 2px #333333;
+}
